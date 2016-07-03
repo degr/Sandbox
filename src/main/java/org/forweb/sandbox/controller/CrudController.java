@@ -1,4 +1,4 @@
-package sandbox.controller;
+package org.forweb.sandbox.controller;
 
 import javassist.tools.web.BadHttpRequest;
 import org.forweb.database.AbstractDao;

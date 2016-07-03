@@ -1,4 +1,4 @@
-package sandbox;
+package org.forweb.sandbox;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

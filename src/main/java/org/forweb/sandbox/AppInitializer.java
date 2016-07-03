@@ -1,4 +1,4 @@
-package sandbox;
+package org.forweb.sandbox;
 
 import org.forweb.database.HibernateSupport;
 import org.springframework.web.WebApplicationInitializer;
@@ -14,7 +14,7 @@ import javax.servlet.ServletRegistration;
 public class AppInitializer implements WebApplicationInitializer {
 
 
-    static final String BASE_PACKAGE = "sandbox";
+    static final String BASE_PACKAGE = "org/forweb/sandbox";
     public static String ROOT;
     public static Boolean DEV = true;
 
@@ -22,7 +22,7 @@ public class AppInitializer implements WebApplicationInitializer {
     public void onStartup(ServletContext container) {
         System.out.println("on startup");
         if (DEV) {
-            HibernateSupport.init("127.0.0.1:3306", "root", "", "sandbox", BASE_PACKAGE + ".entity");
+            HibernateSupport.init("127.0.0.1:3306", "root", "", "org/forweb/sandbox", BASE_PACKAGE + ".entity");
         } else {
             HibernateSupport.init("", "", "", "", BASE_PACKAGE + ".entity");
         }

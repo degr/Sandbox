@@ -1,12 +1,12 @@
-package sandbox.controller;
+package org.forweb.sandbox.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import sandbox.dao.ClientDao;
-import sandbox.entity.Client;
-import sandbox.service.ClientService;
+import org.forweb.sandbox.dao.ClientDao;
+import org.forweb.sandbox.entity.Client;
+import org.forweb.sandbox.service.ClientService;
 
 import java.util.List;
 

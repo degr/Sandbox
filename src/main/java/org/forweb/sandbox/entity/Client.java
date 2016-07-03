@@ -1,4 +1,4 @@
-package sandbox.entity;
+package org.forweb.sandbox.entity;
 
 import org.forweb.database.AbstractEntity;
 
@@ -13,7 +13,7 @@ public class Client extends AbstractEntity {
     private String email;
     private String password;
     private Boolean donator;
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "clientId")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "clientId")
     private List<Account> accounts;
 
     public String getUsername() {
